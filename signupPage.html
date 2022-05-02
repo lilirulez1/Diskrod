@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Diskrod</title>
+    <link rel="stylesheet" type="text/css" href="./src/signup-login.css" />
+    <script src="./src/signup-login.js"></script>
+</head>
+
+<body>
+<div class="Page">
+  
+<div class="Form">
+    <form action="accountCreate.html" method="post" novalidate>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Username" name="uname" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="example@email.com" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Password" name="psw" required>
+      
+          <button type="submit" class="login">Signup</button>
+        </div>
+      
+        <div class="container" style="background-color: rgb(40,40,40);">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#" style="text-decoration: none; color: white;">Forgot password?</a></span>
+        </div>
+      </form>
+
+      <form action="loginPage.html" method="post" class="signupForm">
+        <button type="submit" class="signup">Have have an account? Login</button>
+      </form>
+
+</div>
+</div>
+
+
+</body>
+</html>
