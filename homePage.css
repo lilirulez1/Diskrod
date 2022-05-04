@@ -1,11 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
-    background-color: rgb(40,40,40);
-}
-
-.navBar {
+	margin: 0;
+	background: #222;
+	font-family: sans-serif;
+	font-weight: 800;
     color: white;
 }
 
-.list {
-    text-align: left;
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+header {
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 0%;
+  background: rgb(20,20,20);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+    float: left;
+    font-size: x-large;
+}
+
+nav {
+  margin-left: 25%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(174, 174, 174);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: 50ms;
+}
+
+.background {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), rgb(20,20,20));
+}
+
+.signup {
+    padding: 5%;
+    border: black;
+    border-color: rgb(20,20,20);
+    background-color: rgb(20,20,20);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.signup:hover {
+    color: rgb(174, 174, 174);
 }

@@ -8,22 +8,28 @@
 </html>
 
 <body>
+
 <div class="Page">
   
 <div class="Form">
-    <form action="buttonTest.html" method="post" novalidate>
+    <form action="mainPage.html" method="post" id="login-form" novalidate>
         <div class="container">
+
           <label for="email"><b>Username</b></label>
           <input type="email" placeholder="example@email.com" name="email" required>
       
           <label for="password"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" required>
       
-          <button type="submit" class="login">Login</button>
-        </div>
+          <div class="wrongpsw" id="login-error-msg">
+            <h1>Incorrect password or email</h1>
+          </div> 
+
+          <button type="submit" class="login" id="login-form-submit">Login</button>
+        </div>  
       
-        <div class="container" style="background-color: rgb(40,40,40);">
-          <button type="button" class="cancelbtn">Cancel</button>
+        <div class="container-b" style="background-color: rgb(40,40,40);">
+          <a href="homepage.html"><button class="cancelbtn" type="button">Cancel</button></a>
           <span class="psw"><a href="#" style="text-decoration: none; color: white;">Forgot password?</a></span>
         </div>
       </form>
