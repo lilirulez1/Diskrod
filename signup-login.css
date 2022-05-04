@@ -1,10 +1,12 @@
 /* Bordered form */
 
-body {
-    background-color: rgb(40,40,40);
+body { 
+  font-family: sans-serif;
+  background-image: linear-gradient(45deg, rgb(40,40,40), rgb(20,20,20));
 }
 
 .Page {
+  opacity: 100%;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10%;
@@ -22,20 +24,23 @@ form {
   
   /* Full-width inputs */
   input[type=email], input[type=password] {
+    background-color: rgb(40,40,40);
+    border-radius: 5px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(20, 20, 20);
     box-sizing: border-box;
   }
   
   /* Set a style for all buttons */
   button {
     background-color: rgb(40,40,40);
+    border-radius: 7px;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 0px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -85,11 +90,25 @@ form {
   
   /* Add padding to containers */
   .container {
+    border-radius: 10px;
       color: white;
       background-color: rgb(40,40,40);
     padding: 16px;
     padding-bottom: 0%;
+    margin-bottom: 10px;
   }
+
+  .container-b {
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(40,40,40);
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+}
+
   
   /* The "Forgot password" text */
   span.psw {
@@ -107,3 +126,15 @@ form {
       width: 100%;
     }
   }
+
+.wrongpsw {
+  text-align: center;
+  color: black;
+  background-color: white;
+  max-width: 40%;
+  max-height: 20px;
+  font-size: xx-small;
+  font: 100;
+  padding: 5px;
+  border-radius: 10px;
+}

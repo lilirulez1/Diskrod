@@ -1,0 +1,11 @@
+div {
+    border-radius: 10px;
+}
+
+.name {
+    float: left;
+}
+
+.userPic {
+    float: right;
+}
