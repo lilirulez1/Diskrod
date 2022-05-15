@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+<head>
+    <title>Diskrod</title>
+    <link rel="stylesheet" type="text/css" href="./src/mainPage.css" />
+    <style>
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+                 
 
-    </head>
 
-    <body>
-        <header>
-            <div class="container">
-                <h1 class="logo">Diskrod</h1>
-          
-                <nav>
-                  <ul>
-                      <li class="userPic"><a><button>Profile</button></a></li>
-                  </ul>
-                </nav>
-              </div>
-        </header> 
+.background {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), rgb(14, 14, 14));
+}
+body {
+  text-align: center;
+	margin: 0;
+	background: #222;
+	font-family: sans-serif;
+	font-weight: 800;
+    color: white;
+}
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/100eDEmpWV5YGVCqHI0leU?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </body>
+.navbar {
+  border-radius: 15px;
+  margin-top: .5%;
+  min-height: 100px;
+  max-height: 100px;
+  margin-left: 0.5%;
+  width: 99%;
+  background-color: rgb(12, 12, 12);
+}
+
+.button {
+  position: absolute;
+}
+
+.btn {
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 7.5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+      
+    </style>
+</head>
+<body>
+
+      <div class="navbar">
+        <a class="button" href="userProfile.html"><button class="btn"></button></a>
+      </div>
+      <div style="height: 1000px;" class="background">
+
+      </div>
+</body>
 </html>
