@@ -1,6 +1,52 @@
 <!DOCTYPE html>
+
 <html>
-    <body>
-        <p>Create Account</p>
-    </body>
+<head>
+    <title>Diskrod</title>
+    <link rel="stylesheet" type="text/css" href="./src/signup-login.css" />
+    <script src="./src/signup-login.js"></script>
+</head>
+
+<body>
+<div class="Page">
+  
+<div class="Form">
+    <form action="mainPage.html" method="post" novalidate>
+        <div class="container">
+
+          <label class="username" for="text"><b>Username</b></label>
+          <input type="text" placeholder="LILI" name="username" minlength="4" maxlength="16" required>
+          <label for='txt' class="tag">#
+            <input
+            name="somename"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            minlength="4"
+            maxlength = "4"
+            id="tag"
+            value="   "
+            placeholder="0001"
+            min="1"
+            max="9999"
+            />
+          </label>
+      
+          <button type="submit" class="Create">Connekt!</button>
+        </div>
+      
+        <div class="container-b" style="background-color: rgb(40,40,40);">
+          <a href="signupPage.html"><button class="backbtn" type="button">Back</button></a>
+          <span class="psw"><a href="#" style="text-decoration: none; color: white;">Forgot password?</a></span>
+        </div>
+    </form>
+
+      <form action="loginPage.html" method="post" class="signupForm">
+        <button type="submit" class="signup">Have have an account? Login</button>
+      </form>
+
+</div>
+</div>
+
+
+</body>
 </html>
